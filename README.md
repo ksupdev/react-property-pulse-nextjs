@@ -33,3 +33,15 @@ npx create-next-app@latest react-property-pulse-nextjs
   `mongodb://root:example@localhost:27099`
 ```
 
+## npm package
+```shell
+npm i react-icons
+npm i mongodb mongoose
+npm i regenerate-unicode-properties
+npm i next-auth
+npm i cloudinary
+npm i react-toastify
+npm i react-geocode mapbox-gl react-map-gl
+npm i react-share
+```
+
