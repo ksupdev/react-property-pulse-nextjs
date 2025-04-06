@@ -43,6 +43,7 @@ npm i cloudinary
 npm i react-toastify
 npm i react-geocode mapbox-gl react-map-gl
 npm i react-share
+npm i react-spinners
 
 npm install tailwindcss @tailwindcss/postcss postcss
 ```
