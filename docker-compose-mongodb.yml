@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - "27099:27017"  # Change external port to 27099
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - mongo_data:/data/db  # Persist data
+
+volumes:
+  mongo_data:
+
+  # command for run => docker compose -f docker-compose-mongodb.yml up -d
+  # command for run => docker compose -f  docker-compose-mongodb.yml down
