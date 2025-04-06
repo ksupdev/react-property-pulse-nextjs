@@ -1,11 +1,14 @@
 //sfc
 import PropertyCard from '@/components/PropertyCard';
-import properties from '@/properties.json';
+import connectDB from '@/config/database';
+import Property from '@/models/Property';
 
-const PropertiesPage = () => {
+const PropertiesPage = async () => {
   //http://localhost:3000/properties
 
-  console.log(properties);
+  await connectDB();
+  const properties = await Property.find({}).lean();
+  // console.log(properties);
   return (
     <section className='px-4 py-6'>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-start">
