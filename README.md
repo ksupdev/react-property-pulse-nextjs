@@ -48,3 +48,28 @@ npm i react-spinners
 npm install tailwindcss @tailwindcss/postcss postcss
 ```
 
+## Create Database Mongo
+
+- create database
+
+```json
+const database = 'propertypulse';
+const collection = 'properties';
+
+// Create a new database.
+use(database);
+
+// Create a new collection.
+db.createCollection(collection);
+```
+
+- import data on properties2.json
+
+```json
+// The current database to use.
+use('propertypulse');
+
+// Create a new document in the collection.
+db.getCollection('properties').insertMany([data]);
+```
+

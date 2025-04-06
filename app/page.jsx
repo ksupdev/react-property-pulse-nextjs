@@ -6,6 +6,7 @@ import InfoBoxes from "@/components/InfoBoxes";
 import Link from "next/link";
 
 const HomePage = () => {
+  console.log(process.env.MONGODB_URI)
   return (
     <>
       <Hero />
