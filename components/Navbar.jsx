@@ -161,7 +161,7 @@ const Navbar = () => {
                     <span className='sr-only'>Open user menu</span>
                     <Image
                       className='h-8 w-8 rounded-full'
-                      src={profileImage ||  profileDefault}
+                      src={profileImage || profileDefault}
                       width={40}
                       height={40}
                       alt=''
@@ -185,6 +185,7 @@ const Navbar = () => {
                       role='menuitem'
                       tabIndex='-1'
                       id='user-menu-item-0'
+                      onClick={() => setIsProfileMenuOpen(false)}
                     >
                       Your Profile
                     </Link>
@@ -194,6 +195,7 @@ const Navbar = () => {
                       role='menuitem'
                       tabIndex='-1'
                       id='user-menu-item-2'
+                      onClick={() => setIsProfileMenuOpen(false)}
                     >
                       Saved Properties
                     </Link>
@@ -202,7 +204,7 @@ const Navbar = () => {
                       role='menuitem'
                       tabIndex='-1'
                       id='user-menu-item-2'
-                      onClick={()=>{
+                      onClick={() => {
                         setIsProfileMenuOpen(false);
                         signOut();
                       }}
