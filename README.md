@@ -44,6 +44,7 @@ npm i react-toastify
 npm i react-geocode mapbox-gl react-map-gl
 npm i react-share
 npm i react-spinners
+npm i photoswipe react-photoswipe-gallery
 
 npm install tailwindcss @tailwindcss/postcss postcss
 ```
