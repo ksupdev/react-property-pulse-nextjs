@@ -8,7 +8,7 @@ async function deleteMessage(messageId) {
     const sessionUser = await getSessionUser();
 
     // Check for session
-    if (!sessionUser || !sessionUser.userId) {
+if (!sessionUser || !sessionUser.userId) {
         throw new Error('User ID is required');
     }
 
