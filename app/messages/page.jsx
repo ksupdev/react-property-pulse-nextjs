@@ -1,3 +1,4 @@
+import MessageCard from '@/components/MessageCard';
 import connectDB from '@/config/database';
 import Message from '@/models/Message';
 import '@/models/Property';
@@ -11,7 +12,7 @@ const MessagePage = async () => {
   const sessionUser = await getSessionUser();
 
   const { userId } = sessionUser;
-  console.log(userId);
+  // console.log(userId);
 
   const readMessages = await Message.find({
     recipient: userId,
@@ -40,7 +41,7 @@ const MessagePage = async () => {
             <p>You have no messages</p>
           ) : (
             messages.map((message) => (
-              <h3 key={message._id}>{message.name}</h3>
+              <MessageCard key={message._id} message={message} />
             )))}
         </div>
       </div>
