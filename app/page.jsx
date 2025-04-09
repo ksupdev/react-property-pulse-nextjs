@@ -5,6 +5,7 @@ import HomeProperties from "@/components/HomeProperties";
 import InfoBoxes from "@/components/InfoBoxes";
 // import Link from "next/link";
 import connectDB from "@/config/database";
+import FeaturedProperties from "@/components/FeaturedProperties";
 
 const HomePage = () => {
   connectDB();
@@ -12,6 +13,7 @@ const HomePage = () => {
     <>
       <Hero />
       <InfoBoxes />
+      <FeaturedProperties />
       <HomeProperties />
     </>
   );
